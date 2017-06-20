@@ -10,7 +10,6 @@ public class DaoImpl implements Dao {
 
 	// singleton
 	private static DaoImpl instance;
-	private Connection connection;
 
 	private DaoImpl() {
 
@@ -97,15 +96,6 @@ public class DaoImpl implements Dao {
 	}
 
 	private void sortProdList(List<Produs> prodList) {
-
-		// Collections.sort(prodList, new Comparator<Produs>() {
-		//
-		// @Override
-		// public int compare(Produs o1, Produs o2) {
-		// return o1.getDenumire().compareTo(o2.getDenumire());
-		// }
-		// });
-
 		Collections.sort(prodList, (Produs o1, Produs o2) -> {
 			return o1.getDenumire().compareTo(o2.getDenumire());
 		});
@@ -148,5 +138,10 @@ public class DaoImpl implements Dao {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	@Override
+	public Produs updateProductStoc(int id) {
+		return null;
 	}
 }

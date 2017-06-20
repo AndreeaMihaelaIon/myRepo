@@ -9,5 +9,5 @@ public interface Dao {
 	public List<Produs> getAllProducts();
 	public List<Produs> getProductsByDenumire(String denumire);
 	public Produs getProductById(int id);
-	public Produs updateProductStoc(int id);
+	public void updateProductStoc(int id);
 }
