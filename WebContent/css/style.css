@@ -1,0 +1,32 @@
+/* 
+.produs{
+	
+	clear: both;
+}
+.stanga{
+	
+	float: left;
+	width: 25%;
+	
+}
+.stanga img{
+	
+	max-width: 100%;
+	
+}
+
+.dreapta{
+	
+	float: right;
+	width: 70%;
+} */
+
+.image{
+	max-height: 100px;
+	
+}
+
+.produs:nth-child(4n+1){
+	clear: both;
+	
+}
