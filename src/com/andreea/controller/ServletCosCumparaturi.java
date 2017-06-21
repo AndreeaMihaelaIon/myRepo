@@ -42,6 +42,7 @@ public class ServletCosCumparaturi extends HttpServlet {
 		}
 
 		cos.add(produs);
+		dao.updateProductStoc(id);
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/adaugaInCos.jsp");
 

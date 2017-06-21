@@ -141,7 +141,16 @@ public class DaoImpl implements Dao {
 	}
 
 	@Override
-	public Produs updateProductStoc(int id) {
-		return null;
+	public void updateProductStoc(int id) {
+		Connection con = DBUtils.getConnection();
+		try {
+			PreparedStatement preps = con.prepareStatement("UPDATE produs SET stoc=stoc-1  WHERE id=?");
+			preps.setInt(1, id);
+			preps.executeUpdate();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
 	}
 }
