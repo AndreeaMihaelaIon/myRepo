@@ -11,10 +11,11 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-		<h1 >Produsul a fost adaugat in cos</h1>
 		
 		
-		<div class="container"> Produsele pe care le aveti in cos sunt:
+		<div class="container">
+			<h2 style="color:blue">Produsul a fost adaugat in cos</h2>
+			<h4 style="color:blue">Produsele pe care le aveti in cos sunt:</h4> 
 		
 		<div class="row">
 		<%--! double S=0; --%>
